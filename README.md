@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## DEMO
+https://nft-profile.vercel.app/
+
 ## Getting Started
 
 * Please add `.env.local` on root to run on local, you can see example on `.env.example`
@@ -18,7 +21,20 @@ npm run dev
 yarn dev
 ```
 
-> ***Note***: you can change token address for what token you want to test, you can find config on` ./app/config/constants/addresses.ts`
+> ***Note***: you can change token address for what you want to test, you can find config on `./app/config/constants/addresses.ts`
+
+```
+//addresses.ts
+...
+  carrot: {
+    symbol: 'CARROT',
+    address: {
+      56: '0x807C6CC8d83D35733a7D3990c03E9c94B5090d7E',
+      97: '0x807C6CC8d83D35733a7D3990c03E9c94B5090d7E',
+    },
+  },
+...
+```
 
 =======================================================================================
 
