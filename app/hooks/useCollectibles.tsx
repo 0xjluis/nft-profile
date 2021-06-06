@@ -87,12 +87,11 @@ const useGetCollectibles = () => {
 
       return acc
     }, [])
-    console.log('GET fetchNftData')
+
     setNftData(nftDataMap)
   }, [])
 
   useEffect(() => {
-    console.log('IN useGetCollectibles')
     if (!state.initialize) {
       fetchNftData()
       dispatch({ type: 'initialize' })

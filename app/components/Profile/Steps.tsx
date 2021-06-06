@@ -19,7 +19,7 @@ const Steps = () => {
   if (!isInitialized) {
     return <div>Loading...</div>
   }
-  console.log('currentStep', currentStep)
+
   if (currentStep === 0) {
     return <Mint />
   }

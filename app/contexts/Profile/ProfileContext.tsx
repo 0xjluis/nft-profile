@@ -95,10 +95,7 @@ const ProfileProvider: React.FC = ({ children }) => {
 
   const actions = useMemo(
     () => ({
-      nextStep: () => {
-        console.log('nextStep')
-        dispatch({ type: 'next_step' })
-      },
+      nextStep: () => dispatch({ type: 'next_step' }),
       setStep: (step: number) => dispatch({ type: 'set_step', payload: { step } }),
       setSelectedNft: (tokenId: number, nftAddress: string) => {
         const payload = { tokenId, nftAddress }
