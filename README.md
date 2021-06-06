@@ -1,6 +1,12 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## DEMO
+* Please set you wallet network to BSC testnet
+```
+RPC URL: https://data-seed-prebsc-1-s1.binance.org:8545/
+Chain ID: 97
+```
+
 https://nft-profile.vercel.app/
 
 ## Getting Started
@@ -10,7 +16,6 @@ https://nft-profile.vercel.app/
 // example env
 # NEXT_PUBLIC_CHAIN_ID=97
 # NEXT_PUBLIC_RPC_URL=https://data-seed-prebsc-1-s1.binance.org:8545
-
 ```
 
 * run the development server:
