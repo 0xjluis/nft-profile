@@ -52,6 +52,11 @@ const reducer = (state: any, actions: any): any => {
         ...state,
         deleteState: 'fail',
       }
+    case 'delete_clear':
+      return {
+        ...state,
+        deleteState: '',
+      }
     default:
       return state
   }
@@ -74,7 +79,6 @@ const useGetCollectibles = () => {
       nftDataFetchPromises.push(getTokenUriAndId(profileContract, account, i))
     }
     const response = await Promise.all(nftDataFetchPromises)
-    // const nftDataMap = Nfts.filter(nft => response.map(obj => obj.tokenURI === nft.tokenURI))
     const nftDataMap = response.reduce((acc, cur) => {
       const data = Nfts.find(nft => nft.tokenURI === cur?.tokenURI);
       acc = [
@@ -104,7 +108,6 @@ const useGetCollectibles = () => {
 export const useDeleteCollectibles = () => {
   const { account } = useWeb3React()
   const [state, dispatch] = useReducer(reducer, initialState)
-  // const [initialized, setInitialized] = useState(false)
   const web3 = useWeb3()
   const profileContract = useMemo(() => getProfileContract(web3), [web3])
 
@@ -117,6 +120,7 @@ export const useDeleteCollectibles = () => {
 
         dispatch({ type: 'delete_receipt' })
       } catch (e) {
+        dispatch({ type: 'delete_clear' })
         console.log(e)
       }
     }

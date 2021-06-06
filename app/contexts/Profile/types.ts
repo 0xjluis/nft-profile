@@ -1,13 +1,6 @@
 import BigNumber from 'bignumber.js'
 import { Action } from '../types'
 
-// export interface ProfileActionPayload extends Action {
-//   step: number
-//   tokenId: number
-//   nftAddress: string
-//   userName: string
-// }
-
 export interface ProfileState {
   isInitialized: boolean
   currentStep: number
