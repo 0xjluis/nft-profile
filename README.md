@@ -2,13 +2,25 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+* Please add `.env.local` on root to run on local, you can see example on `.env.example`
+```
+// example env
+# NEXT_PUBLIC_CHAIN_ID=97
+# NEXT_PUBLIC_RPC_URL=https://data-seed-prebsc-1-s1.binance.org:8545
+
+```
+
+* run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
 ```
+
+> ***Note***: you can change token address for what token you want to test, you can find config on` ./app/config/constants/addresses.ts`
+
+=======================================================================================
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
