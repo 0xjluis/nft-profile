@@ -34,7 +34,6 @@ const shadows = {
 
 const colors = {
   failure: "#ED4B9E",
-  // primary: "#1FC7D4",
   primary: "#3bb88e",
   primaryBright: "#53DEE9",
   primaryDark: "#0098A1",
@@ -52,7 +51,6 @@ const colors = {
   input: "#eeeaf4",
   inputSecondary: "#d7caec",
   tertiary: "#EFF4F5",
-  // text: "#280D5F",
   text: "#f57d20",
   textDisabled: "#BDC2C4",
   textSubtle: "#858292",
