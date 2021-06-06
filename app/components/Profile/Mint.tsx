@@ -1,9 +1,9 @@
 import React, { useState, useMemo, useContext } from 'react'
 import { useWeb3React } from '@web3-react/core'
 import BigNumber from 'bignumber.js'
-import { Card, CardBody, ArrowForwardIcon } from '@pancakeswap-libs/uikit'
+import { CardBody } from '@pancakeswap-libs/uikit'
 
-import { Heading, Text, Button } from '@/components'
+import { Heading, Text, Card } from '@/components'
 import ApproveConfirmButtons from '@/components/Profile/ApproveConfirmButtons'
 import { MINT_COST, DEFAULT_TOKEN_DECIMAL } from '@/config'
 import { tokens } from '@/config/constants/addresses'

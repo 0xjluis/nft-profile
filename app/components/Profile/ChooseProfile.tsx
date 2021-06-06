@@ -1,8 +1,8 @@
 import React, { useState, useContext, useEffect } from 'react'
 import { useWeb3React } from '@web3-react/core'
-import { Card, CardBody, RemoveIcon, useModal, AutoRenewIcon } from '@pancakeswap-libs/uikit'
+import { CardBody, RemoveIcon, useModal, AutoRenewIcon } from '@pancakeswap-libs/uikit'
 
-import { Heading, Text, Button, Flex } from '@/components'
+import { Heading, Text, Button, Flex, Card } from '@/components'
 import useGetCollectibles, { useDeleteCollectibles } from '@/hooks/useCollectibles'
 import { ProfileContext } from '@/contexts/Profile/ProfileContext'
 import SelectionCard from './SelectionCard'

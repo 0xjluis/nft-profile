@@ -18,13 +18,24 @@ const AppWrapper = styled.div`
   }
 `
 
+const Footer = styled.div<{ src: string }>`
+  background-image: url('${({ src }) => src}');
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  padding-bottom: 17%;
+  background-size: 50%;
+`
+
 export default function Home() {
   useEagerConnect()
 
   return (
-    <AppWrapper>
-      <GlobalStyle />
-      <Profile />
-    </AppWrapper>
+    <>
+      <AppWrapper>
+        <GlobalStyle />
+        <Profile />
+      </AppWrapper>
+      <Footer src='/image/footerbg.svg' />
+    </>
   )
 }
